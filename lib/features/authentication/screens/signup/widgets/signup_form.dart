@@ -1,5 +1,5 @@
-import "package:ecommerce_app/common/widgets.login_signup/form_divider.dart";
-import "package:ecommerce_app/common/widgets.login_signup/social_buttons.dart";
+import "package:ecommerce_app/common/widgets/login_signup/form_divider.dart";
+import "package:ecommerce_app/common/widgets/login_signup/social_buttons.dart";
 import "package:ecommerce_app/features/authentication/screens/signup/verify_email.dart";
 import "package:ecommerce_app/features/authentication/screens/signup/widgets/terms_conditions-checkbox.dart";
 
