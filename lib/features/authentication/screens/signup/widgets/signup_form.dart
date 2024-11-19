@@ -1,6 +1,7 @@
 import "package:ecommerce_app/common/widgets.login_signup/form_divider.dart";
 import "package:ecommerce_app/common/widgets.login_signup/social_buttons.dart";
-import "package:ecommerce_app/features/authentication/screens/signup/widgets/terms_conditions.dart";
+import "package:ecommerce_app/features/authentication/screens/signup/widgets/terms_conditions-checkbox.dart";
+
 import "package:ecommerce_app/utils/constants/sizes.dart";
 import "package:ecommerce_app/utils/constants/text_strings.dart";
 import "package:flutter/material.dart";
