@@ -37,21 +37,32 @@ class TLoginForm extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtnInputFields / 2),
     
             // Remember me & Forgot Password
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    Checkbox(value: true, onChanged: (value) {}),
-                    const Text(TTexts.rememberMe),
-                  ],
-                ),
-                TextButton(
-                  onPressed: () => Get.to(() => const ForgotPassword()),
-                  child: const Text(TTexts.forgetPassword),
-                ),
-              ],
-            ),
+           Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+    Flexible(
+      child: Row(
+        children: [
+          Checkbox(value: true, onChanged: (value) {}),
+          Flexible(
+            child: Text(TTexts.rememberMe, overflow: TextOverflow.ellipsis),
+          ),
+        ],
+      ),
+    ),
+    Flexible(
+      child: TextButton(
+        onPressed: () => Get.to(() => const ForgotPassword()),
+        child: Text(
+          TTexts.forgetPassword,
+          overflow: TextOverflow.ellipsis, // Prevents text overflow.
+          style: const TextStyle(fontSize: 12), // Reduce font size if needed.
+        ),
+      ),
+    ),
+  ],
+),
+
     
             const SizedBox(height: TSizes.spaceBtwSections),
     
