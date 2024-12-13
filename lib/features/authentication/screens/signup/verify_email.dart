@@ -22,7 +22,7 @@ class VerifyEmailScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
           children: [
               //Image
@@ -61,7 +61,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 child: ElevatedButton(onPressed: () => Get.to(() => SuccessScreen(
                   image: TImages.staticSuccessIllustration,
                   title: TTexts.yourAccountCreatedTitle,
-                  Subtitle: TTexts.yourAccountCreatedSubTitle,
+                  subTitle: TTexts.yourAccountCreatedSubTitle,
                   onPressed: () => Get.to(() => const LoginScreen())
                 )), 
                 child: const Text(TTexts.tContinue))

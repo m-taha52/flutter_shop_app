@@ -29,15 +29,15 @@ class ForgotPassword extends StatelessWidget {
               const SizedBox(height: TSizes.spaceBtwSections * 2),
 
               TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: TTexts.email,
                   prefixIcon: Icon(Iconsax.direct_right)
                 ),
               ),
 
-              SizedBox(height: TSizes.spaceBtwSections,),
+              const SizedBox(height: TSizes.spaceBtwSections,),
               
-              SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const ResetPassword()), child: Text(TTexts.submit)))
+              SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const ResetPassword()), child: const Text(TTexts.submit)))
 
               ///TextField
             ],),

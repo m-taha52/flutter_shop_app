@@ -6,9 +6,9 @@ import 'package:ecommerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.image, required this.title, required this.Subtitle, required this.onPressed});
+  const SuccessScreen({super.key, required this.image, required this.title, required this.subTitle, required this.onPressed});
 
-  final String image, title, Subtitle;
+  final String image, title, subTitle;
   final VoidCallback onPressed;
 
   @override
@@ -34,7 +34,7 @@ class SuccessScreen extends StatelessWidget {
                 ),
               const SizedBox(height: TSizes.spaceBtwItems,),
               Text(
-                Subtitle, 
+                subTitle, 
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
                 ),

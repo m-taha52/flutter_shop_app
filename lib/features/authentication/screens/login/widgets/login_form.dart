@@ -44,7 +44,7 @@ class TLoginForm extends StatelessWidget {
       child: Row(
         children: [
           Checkbox(value: true, onChanged: (value) {}),
-          Flexible(
+          const Flexible(
             child: Text(TTexts.rememberMe, overflow: TextOverflow.ellipsis),
           ),
         ],
@@ -53,10 +53,10 @@ class TLoginForm extends StatelessWidget {
     Flexible(
       child: TextButton(
         onPressed: () => Get.to(() => const ForgotPassword()),
-        child: Text(
+        child: const Text(
           TTexts.forgetPassword,
           overflow: TextOverflow.ellipsis, // Prevents text overflow.
-          style: const TextStyle(fontSize: 12), // Reduce font size if needed.
+          style: TextStyle(fontSize: 12), // Reduce font size if needed.
         ),
       ),
     ),

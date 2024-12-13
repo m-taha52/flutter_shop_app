@@ -1,4 +1,3 @@
-import "package:carousel_slider/carousel_options.dart";
 import "package:carousel_slider/carousel_slider.dart";
 import "package:ecommerce_app/common/widgets/custom_shapes/containers/circular_container.dart";
 import "package:ecommerce_app/common/widgets/image/t_rounded_image.dart";
@@ -42,7 +41,7 @@ class TPromoSlider extends StatelessWidget {
                    TCircularContainer(
                     width:  20, 
                     height: 5, 
-                    margin: EdgeInsets.only(right: 10),
+                    margin: const EdgeInsets.only(right: 10),
                     backgroundColor: controller.carousalCurrentIndex.value == i ? TColors.primary : TColors.grey ,),
                  ],
                ),
