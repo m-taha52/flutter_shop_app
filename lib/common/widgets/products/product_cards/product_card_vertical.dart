@@ -91,11 +91,21 @@ class TProductCardVertical extends StatelessWidget {
                     const SizedBox(width: TSizes.xs,),
                     const Icon(Iconsax.verify5, color: TColors.primary, size: TSizes.iconXs,)
                   ],),
+
+                ],
+              ),
+            ),
+
+
+                  Spacer(),
       
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const TProductPriceText(price: '35.0',),
+                      const Padding(
+                        padding: EdgeInsets.only(left: TSizes.sm),
+                        child: TProductPriceText(price: '35.0',),
+                      ),
                       Container(
                         decoration: const BoxDecoration(
                           color: TColors.dark,
@@ -111,9 +121,6 @@ class TProductCardVertical extends StatelessWidget {
                       )
       
                   ],)
-                ],
-              ),
-            ),
           ],
         ),
       ),
