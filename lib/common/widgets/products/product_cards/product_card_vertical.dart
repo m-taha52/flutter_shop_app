@@ -2,7 +2,7 @@ import 'package:ecommerce_app/common/styles/shadows.dart';
 import 'package:ecommerce_app/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:ecommerce_app/common/widgets/icons/t_circular_icon.dart';
 import 'package:ecommerce_app/common/widgets/image/t_rounded_image.dart';
-import 'package:ecommerce_app/common/widgets/image_text_widgets/product_price_text.dart';
+import 'package:ecommerce_app/common/widgets/text/product_price_text.dart';
 import 'package:ecommerce_app/common/widgets/text/product_title_text.dart';
 import 'package:ecommerce_app/utils/constants/colors.dart';
 import 'package:ecommerce_app/utils/constants/image_strings.dart';
@@ -107,7 +107,7 @@ class TProductCardVertical extends StatelessWidget {
                         child: const SizedBox(
                           width: TSizes.iconLg * 1.2,
                           height: TSizes.iconLg * 1.2,
-                          child: Center(child: const Icon(Iconsax.add, color: TColors.white))),
+                          child: Center(child:  Icon(Iconsax.add, color: TColors.white))),
                       )
       
                   ],)
